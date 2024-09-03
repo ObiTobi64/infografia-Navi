@@ -65,5 +65,7 @@ func _on_timer_timeout() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
-		if event.is_action_pressed("PutEgg"):
+		if event.is_action_pressed("DropEgg"):
 			do_put_egg.emit()
+			print("drop")
+			
